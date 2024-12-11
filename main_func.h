@@ -2,7 +2,8 @@
 #define MAIN_FUNC_H_INCLUDED
 #include <vector>
 using namespace std;
-void read(const string& fname,string atribute);
+void finish(const string& nfname);
+void read(const string& fname);
 vector<string> parser(const string& command);
 void help(const string& command);
 vector <string> analizer(const vector<string>& res);
