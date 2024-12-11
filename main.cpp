@@ -8,10 +8,12 @@ int main(){
   while (1){
     cout<<'<';
     getline(cin,input);
+    if(input=="exit"){
+      break;
+    }
     vector<string> parsed=parser(input);
     vector<string> res=analizer(parsed);
     doer(res);
-    cout<<endl;
   }
   return 0;
 }
